@@ -1,0 +1,8 @@
+# we generally dont write docker compose for only one image
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:80"
+    restart: always
